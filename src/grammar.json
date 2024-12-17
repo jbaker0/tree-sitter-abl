@@ -1479,6 +1479,22 @@
               "value": 1,
               "content": {
                 "type": "PATTERN",
+                "value": "[cC]"
+              }
+            }
+          },
+          "named": false,
+          "value": "C"
+        },
+        {
+          "type": "ALIAS",
+          "content": {
+            "type": "TOKEN",
+            "content": {
+              "type": "PREC",
+              "value": 1,
+              "content": {
+                "type": "PATTERN",
                 "value": "[dD][eE][cC][iI][mM][aA][lL]"
               }
             }
@@ -15549,37 +15565,15 @@
     }
   ],
   "conflicts": [
-    [
-      "input_expression"
-    ],
-    [
-      "record_phrase"
-    ],
-    [
-      "sort_clause"
-    ],
-    [
-      "_statement"
-    ],
-    [
-      "_statement",
-      "if_statement"
-    ],
-    [
-      "if_statement"
-    ],
-    [
-      "abl_statement"
-    ],
-    [
-      "abl_statement",
-      "variable_definition"
-    ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "buffer_definition"
-    ],
+    ["input_expression"],
+    ["record_phrase"],
+    ["sort_clause"],
+    ["_statement"],
+    ["_statement", "if_statement"],
+    ["if_statement"],
+    ["abl_statement"],
+    ["abl_statement", "variable_definition"],
+    ["abl_statement", "variable_definition", "buffer_definition"],
     [
       "abl_statement",
       "variable_definition",
@@ -17879,11 +17873,7 @@
       "buffer_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "query_definition"
-    ],
+    ["abl_statement", "variable_definition", "query_definition"],
     [
       "abl_statement",
       "variable_definition",
@@ -18967,11 +18957,7 @@
       "query_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "temp_table_definition"
-    ],
+    ["abl_statement", "variable_definition", "temp_table_definition"],
     [
       "abl_statement",
       "variable_definition",
@@ -19479,11 +19465,7 @@
       "temp_table_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "workfile_definition"
-    ],
+    ["abl_statement", "variable_definition", "workfile_definition"],
     [
       "abl_statement",
       "variable_definition",
@@ -19719,11 +19701,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "property_definition"
-    ],
+    ["abl_statement", "variable_definition", "property_definition"],
     [
       "abl_statement",
       "variable_definition",
@@ -19831,11 +19809,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "data_source_definition"
-    ],
+    ["abl_statement", "variable_definition", "data_source_definition"],
     [
       "abl_statement",
       "variable_definition",
@@ -19883,11 +19857,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "event_definition"
-    ],
+    ["abl_statement", "variable_definition", "event_definition"],
     [
       "abl_statement",
       "variable_definition",
@@ -19907,31 +19877,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "dataset_definition"
-    ],
+    ["abl_statement", "variable_definition", "dataset_definition"],
     [
       "abl_statement",
       "variable_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "variable_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "buffer_definition"
-    ],
-    [
-      "abl_statement",
-      "buffer_definition",
-      "query_definition"
-    ],
+    ["abl_statement", "variable_definition", "stream_definition"],
+    ["abl_statement", "buffer_definition"],
+    ["abl_statement", "buffer_definition", "query_definition"],
     [
       "abl_statement",
       "buffer_definition",
@@ -21015,11 +20970,7 @@
       "query_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "buffer_definition",
-      "temp_table_definition"
-    ],
+    ["abl_statement", "buffer_definition", "temp_table_definition"],
     [
       "abl_statement",
       "buffer_definition",
@@ -21527,11 +21478,7 @@
       "temp_table_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "buffer_definition",
-      "workfile_definition"
-    ],
+    ["abl_statement", "buffer_definition", "workfile_definition"],
     [
       "abl_statement",
       "buffer_definition",
@@ -21767,11 +21714,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "buffer_definition",
-      "property_definition"
-    ],
+    ["abl_statement", "buffer_definition", "property_definition"],
     [
       "abl_statement",
       "buffer_definition",
@@ -21879,11 +21822,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "buffer_definition",
-      "data_source_definition"
-    ],
+    ["abl_statement", "buffer_definition", "data_source_definition"],
     [
       "abl_statement",
       "buffer_definition",
@@ -21931,11 +21870,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "buffer_definition",
-      "event_definition"
-    ],
+    ["abl_statement", "buffer_definition", "event_definition"],
     [
       "abl_statement",
       "buffer_definition",
@@ -21955,31 +21890,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "buffer_definition",
-      "dataset_definition"
-    ],
+    ["abl_statement", "buffer_definition", "dataset_definition"],
     [
       "abl_statement",
       "buffer_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "buffer_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "query_definition"
-    ],
-    [
-      "abl_statement",
-      "query_definition",
-      "temp_table_definition"
-    ],
+    ["abl_statement", "buffer_definition", "stream_definition"],
+    ["abl_statement", "query_definition"],
+    ["abl_statement", "query_definition", "temp_table_definition"],
     [
       "abl_statement",
       "query_definition",
@@ -22487,11 +22407,7 @@
       "temp_table_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "query_definition",
-      "workfile_definition"
-    ],
+    ["abl_statement", "query_definition", "workfile_definition"],
     [
       "abl_statement",
       "query_definition",
@@ -22727,11 +22643,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "query_definition",
-      "property_definition"
-    ],
+    ["abl_statement", "query_definition", "property_definition"],
     [
       "abl_statement",
       "query_definition",
@@ -22839,11 +22751,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "query_definition",
-      "data_source_definition"
-    ],
+    ["abl_statement", "query_definition", "data_source_definition"],
     [
       "abl_statement",
       "query_definition",
@@ -22891,11 +22799,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "query_definition",
-      "event_definition"
-    ],
+    ["abl_statement", "query_definition", "event_definition"],
     [
       "abl_statement",
       "query_definition",
@@ -22915,31 +22819,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "query_definition",
-      "dataset_definition"
-    ],
+    ["abl_statement", "query_definition", "dataset_definition"],
     [
       "abl_statement",
       "query_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "query_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "temp_table_definition"
-    ],
-    [
-      "abl_statement",
-      "temp_table_definition",
-      "workfile_definition"
-    ],
+    ["abl_statement", "query_definition", "stream_definition"],
+    ["abl_statement", "temp_table_definition"],
+    ["abl_statement", "temp_table_definition", "workfile_definition"],
     [
       "abl_statement",
       "temp_table_definition",
@@ -23175,11 +23064,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "temp_table_definition",
-      "property_definition"
-    ],
+    ["abl_statement", "temp_table_definition", "property_definition"],
     [
       "abl_statement",
       "temp_table_definition",
@@ -23287,11 +23172,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "temp_table_definition",
-      "data_source_definition"
-    ],
+    ["abl_statement", "temp_table_definition", "data_source_definition"],
     [
       "abl_statement",
       "temp_table_definition",
@@ -23339,11 +23220,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "temp_table_definition",
-      "event_definition"
-    ],
+    ["abl_statement", "temp_table_definition", "event_definition"],
     [
       "abl_statement",
       "temp_table_definition",
@@ -23363,31 +23240,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "temp_table_definition",
-      "dataset_definition"
-    ],
+    ["abl_statement", "temp_table_definition", "dataset_definition"],
     [
       "abl_statement",
       "temp_table_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "temp_table_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "workfile_definition"
-    ],
-    [
-      "abl_statement",
-      "workfile_definition",
-      "property_definition"
-    ],
+    ["abl_statement", "temp_table_definition", "stream_definition"],
+    ["abl_statement", "workfile_definition"],
+    ["abl_statement", "workfile_definition", "property_definition"],
     [
       "abl_statement",
       "workfile_definition",
@@ -23495,11 +23357,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "workfile_definition",
-      "data_source_definition"
-    ],
+    ["abl_statement", "workfile_definition", "data_source_definition"],
     [
       "abl_statement",
       "workfile_definition",
@@ -23547,11 +23405,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "workfile_definition",
-      "event_definition"
-    ],
+    ["abl_statement", "workfile_definition", "event_definition"],
     [
       "abl_statement",
       "workfile_definition",
@@ -23571,31 +23425,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "workfile_definition",
-      "dataset_definition"
-    ],
+    ["abl_statement", "workfile_definition", "dataset_definition"],
     [
       "abl_statement",
       "workfile_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "workfile_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "property_definition"
-    ],
-    [
-      "abl_statement",
-      "property_definition",
-      "data_source_definition"
-    ],
+    ["abl_statement", "workfile_definition", "stream_definition"],
+    ["abl_statement", "property_definition"],
+    ["abl_statement", "property_definition", "data_source_definition"],
     [
       "abl_statement",
       "property_definition",
@@ -23643,11 +23482,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "property_definition",
-      "event_definition"
-    ],
+    ["abl_statement", "property_definition", "event_definition"],
     [
       "abl_statement",
       "property_definition",
@@ -23667,31 +23502,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "property_definition",
-      "dataset_definition"
-    ],
+    ["abl_statement", "property_definition", "dataset_definition"],
     [
       "abl_statement",
       "property_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "property_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "data_source_definition"
-    ],
-    [
-      "abl_statement",
-      "data_source_definition",
-      "event_definition"
-    ],
+    ["abl_statement", "property_definition", "stream_definition"],
+    ["abl_statement", "data_source_definition"],
+    ["abl_statement", "data_source_definition", "event_definition"],
     [
       "abl_statement",
       "data_source_definition",
@@ -23711,67 +23531,29 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "data_source_definition",
-      "dataset_definition"
-    ],
+    ["abl_statement", "data_source_definition", "dataset_definition"],
     [
       "abl_statement",
       "data_source_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "data_source_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "event_definition"
-    ],
-    [
-      "abl_statement",
-      "event_definition",
-      "dataset_definition"
-    ],
+    ["abl_statement", "data_source_definition", "stream_definition"],
+    ["abl_statement", "event_definition"],
+    ["abl_statement", "event_definition", "dataset_definition"],
     [
       "abl_statement",
       "event_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "abl_statement",
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "dataset_definition"
-    ],
-    [
-      "abl_statement",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "abl_statement",
-      "stream_definition"
-    ],
-    [
-      "variable_definition"
-    ],
-    [
-      "variable_definition",
-      "buffer_definition"
-    ],
-    [
-      "variable_definition",
-      "buffer_definition",
-      "query_definition"
-    ],
+    ["abl_statement", "event_definition", "stream_definition"],
+    ["abl_statement", "dataset_definition"],
+    ["abl_statement", "dataset_definition", "stream_definition"],
+    ["abl_statement", "stream_definition"],
+    ["variable_definition"],
+    ["variable_definition", "buffer_definition"],
+    ["variable_definition", "buffer_definition", "query_definition"],
     [
       "variable_definition",
       "buffer_definition",
@@ -24855,11 +24637,7 @@
       "query_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "buffer_definition",
-      "temp_table_definition"
-    ],
+    ["variable_definition", "buffer_definition", "temp_table_definition"],
     [
       "variable_definition",
       "buffer_definition",
@@ -25367,11 +25145,7 @@
       "temp_table_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "buffer_definition",
-      "workfile_definition"
-    ],
+    ["variable_definition", "buffer_definition", "workfile_definition"],
     [
       "variable_definition",
       "buffer_definition",
@@ -25607,11 +25381,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "buffer_definition",
-      "property_definition"
-    ],
+    ["variable_definition", "buffer_definition", "property_definition"],
     [
       "variable_definition",
       "buffer_definition",
@@ -25719,11 +25489,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "buffer_definition",
-      "data_source_definition"
-    ],
+    ["variable_definition", "buffer_definition", "data_source_definition"],
     [
       "variable_definition",
       "buffer_definition",
@@ -25771,11 +25537,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "buffer_definition",
-      "event_definition"
-    ],
+    ["variable_definition", "buffer_definition", "event_definition"],
     [
       "variable_definition",
       "buffer_definition",
@@ -25795,31 +25557,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "buffer_definition",
-      "dataset_definition"
-    ],
+    ["variable_definition", "buffer_definition", "dataset_definition"],
     [
       "variable_definition",
       "buffer_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "buffer_definition",
-      "stream_definition"
-    ],
-    [
-      "variable_definition",
-      "query_definition"
-    ],
-    [
-      "variable_definition",
-      "query_definition",
-      "temp_table_definition"
-    ],
+    ["variable_definition", "buffer_definition", "stream_definition"],
+    ["variable_definition", "query_definition"],
+    ["variable_definition", "query_definition", "temp_table_definition"],
     [
       "variable_definition",
       "query_definition",
@@ -26327,11 +26074,7 @@
       "temp_table_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "query_definition",
-      "workfile_definition"
-    ],
+    ["variable_definition", "query_definition", "workfile_definition"],
     [
       "variable_definition",
       "query_definition",
@@ -26567,11 +26310,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "query_definition",
-      "property_definition"
-    ],
+    ["variable_definition", "query_definition", "property_definition"],
     [
       "variable_definition",
       "query_definition",
@@ -26679,11 +26418,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "query_definition",
-      "data_source_definition"
-    ],
+    ["variable_definition", "query_definition", "data_source_definition"],
     [
       "variable_definition",
       "query_definition",
@@ -26731,11 +26466,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "query_definition",
-      "event_definition"
-    ],
+    ["variable_definition", "query_definition", "event_definition"],
     [
       "variable_definition",
       "query_definition",
@@ -26755,31 +26486,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "query_definition",
-      "dataset_definition"
-    ],
+    ["variable_definition", "query_definition", "dataset_definition"],
     [
       "variable_definition",
       "query_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "query_definition",
-      "stream_definition"
-    ],
-    [
-      "variable_definition",
-      "temp_table_definition"
-    ],
-    [
-      "variable_definition",
-      "temp_table_definition",
-      "workfile_definition"
-    ],
+    ["variable_definition", "query_definition", "stream_definition"],
+    ["variable_definition", "temp_table_definition"],
+    ["variable_definition", "temp_table_definition", "workfile_definition"],
     [
       "variable_definition",
       "temp_table_definition",
@@ -27015,11 +26731,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "temp_table_definition",
-      "property_definition"
-    ],
+    ["variable_definition", "temp_table_definition", "property_definition"],
     [
       "variable_definition",
       "temp_table_definition",
@@ -27127,11 +26839,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "temp_table_definition",
-      "data_source_definition"
-    ],
+    ["variable_definition", "temp_table_definition", "data_source_definition"],
     [
       "variable_definition",
       "temp_table_definition",
@@ -27179,11 +26887,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "temp_table_definition",
-      "event_definition"
-    ],
+    ["variable_definition", "temp_table_definition", "event_definition"],
     [
       "variable_definition",
       "temp_table_definition",
@@ -27203,31 +26907,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "temp_table_definition",
-      "dataset_definition"
-    ],
+    ["variable_definition", "temp_table_definition", "dataset_definition"],
     [
       "variable_definition",
       "temp_table_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "temp_table_definition",
-      "stream_definition"
-    ],
-    [
-      "variable_definition",
-      "workfile_definition"
-    ],
-    [
-      "variable_definition",
-      "workfile_definition",
-      "property_definition"
-    ],
+    ["variable_definition", "temp_table_definition", "stream_definition"],
+    ["variable_definition", "workfile_definition"],
+    ["variable_definition", "workfile_definition", "property_definition"],
     [
       "variable_definition",
       "workfile_definition",
@@ -27335,11 +27024,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "workfile_definition",
-      "data_source_definition"
-    ],
+    ["variable_definition", "workfile_definition", "data_source_definition"],
     [
       "variable_definition",
       "workfile_definition",
@@ -27387,11 +27072,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "workfile_definition",
-      "event_definition"
-    ],
+    ["variable_definition", "workfile_definition", "event_definition"],
     [
       "variable_definition",
       "workfile_definition",
@@ -27411,31 +27092,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "workfile_definition",
-      "dataset_definition"
-    ],
+    ["variable_definition", "workfile_definition", "dataset_definition"],
     [
       "variable_definition",
       "workfile_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "workfile_definition",
-      "stream_definition"
-    ],
-    [
-      "variable_definition",
-      "property_definition"
-    ],
-    [
-      "variable_definition",
-      "property_definition",
-      "data_source_definition"
-    ],
+    ["variable_definition", "workfile_definition", "stream_definition"],
+    ["variable_definition", "property_definition"],
+    ["variable_definition", "property_definition", "data_source_definition"],
     [
       "variable_definition",
       "property_definition",
@@ -27483,11 +27149,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "property_definition",
-      "event_definition"
-    ],
+    ["variable_definition", "property_definition", "event_definition"],
     [
       "variable_definition",
       "property_definition",
@@ -27507,31 +27169,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "property_definition",
-      "dataset_definition"
-    ],
+    ["variable_definition", "property_definition", "dataset_definition"],
     [
       "variable_definition",
       "property_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "property_definition",
-      "stream_definition"
-    ],
-    [
-      "variable_definition",
-      "data_source_definition"
-    ],
-    [
-      "variable_definition",
-      "data_source_definition",
-      "event_definition"
-    ],
+    ["variable_definition", "property_definition", "stream_definition"],
+    ["variable_definition", "data_source_definition"],
+    ["variable_definition", "data_source_definition", "event_definition"],
     [
       "variable_definition",
       "data_source_definition",
@@ -27551,67 +27198,29 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "data_source_definition",
-      "dataset_definition"
-    ],
+    ["variable_definition", "data_source_definition", "dataset_definition"],
     [
       "variable_definition",
       "data_source_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "data_source_definition",
-      "stream_definition"
-    ],
-    [
-      "variable_definition",
-      "event_definition"
-    ],
-    [
-      "variable_definition",
-      "event_definition",
-      "dataset_definition"
-    ],
+    ["variable_definition", "data_source_definition", "stream_definition"],
+    ["variable_definition", "event_definition"],
+    ["variable_definition", "event_definition", "dataset_definition"],
     [
       "variable_definition",
       "event_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "variable_definition",
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "variable_definition",
-      "dataset_definition"
-    ],
-    [
-      "variable_definition",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "variable_definition",
-      "stream_definition"
-    ],
-    [
-      "buffer_definition"
-    ],
-    [
-      "buffer_definition",
-      "query_definition"
-    ],
-    [
-      "buffer_definition",
-      "query_definition",
-      "temp_table_definition"
-    ],
+    ["variable_definition", "event_definition", "stream_definition"],
+    ["variable_definition", "dataset_definition"],
+    ["variable_definition", "dataset_definition", "stream_definition"],
+    ["variable_definition", "stream_definition"],
+    ["buffer_definition"],
+    ["buffer_definition", "query_definition"],
+    ["buffer_definition", "query_definition", "temp_table_definition"],
     [
       "buffer_definition",
       "query_definition",
@@ -28119,11 +27728,7 @@
       "temp_table_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "query_definition",
-      "workfile_definition"
-    ],
+    ["buffer_definition", "query_definition", "workfile_definition"],
     [
       "buffer_definition",
       "query_definition",
@@ -28359,11 +27964,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "query_definition",
-      "property_definition"
-    ],
+    ["buffer_definition", "query_definition", "property_definition"],
     [
       "buffer_definition",
       "query_definition",
@@ -28471,11 +28072,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "query_definition",
-      "data_source_definition"
-    ],
+    ["buffer_definition", "query_definition", "data_source_definition"],
     [
       "buffer_definition",
       "query_definition",
@@ -28523,11 +28120,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "query_definition",
-      "event_definition"
-    ],
+    ["buffer_definition", "query_definition", "event_definition"],
     [
       "buffer_definition",
       "query_definition",
@@ -28547,31 +28140,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "query_definition",
-      "dataset_definition"
-    ],
+    ["buffer_definition", "query_definition", "dataset_definition"],
     [
       "buffer_definition",
       "query_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "query_definition",
-      "stream_definition"
-    ],
-    [
-      "buffer_definition",
-      "temp_table_definition"
-    ],
-    [
-      "buffer_definition",
-      "temp_table_definition",
-      "workfile_definition"
-    ],
+    ["buffer_definition", "query_definition", "stream_definition"],
+    ["buffer_definition", "temp_table_definition"],
+    ["buffer_definition", "temp_table_definition", "workfile_definition"],
     [
       "buffer_definition",
       "temp_table_definition",
@@ -28807,11 +28385,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "temp_table_definition",
-      "property_definition"
-    ],
+    ["buffer_definition", "temp_table_definition", "property_definition"],
     [
       "buffer_definition",
       "temp_table_definition",
@@ -28919,11 +28493,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "temp_table_definition",
-      "data_source_definition"
-    ],
+    ["buffer_definition", "temp_table_definition", "data_source_definition"],
     [
       "buffer_definition",
       "temp_table_definition",
@@ -28971,11 +28541,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "temp_table_definition",
-      "event_definition"
-    ],
+    ["buffer_definition", "temp_table_definition", "event_definition"],
     [
       "buffer_definition",
       "temp_table_definition",
@@ -28995,31 +28561,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "temp_table_definition",
-      "dataset_definition"
-    ],
+    ["buffer_definition", "temp_table_definition", "dataset_definition"],
     [
       "buffer_definition",
       "temp_table_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "temp_table_definition",
-      "stream_definition"
-    ],
-    [
-      "buffer_definition",
-      "workfile_definition"
-    ],
-    [
-      "buffer_definition",
-      "workfile_definition",
-      "property_definition"
-    ],
+    ["buffer_definition", "temp_table_definition", "stream_definition"],
+    ["buffer_definition", "workfile_definition"],
+    ["buffer_definition", "workfile_definition", "property_definition"],
     [
       "buffer_definition",
       "workfile_definition",
@@ -29127,11 +28678,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "workfile_definition",
-      "data_source_definition"
-    ],
+    ["buffer_definition", "workfile_definition", "data_source_definition"],
     [
       "buffer_definition",
       "workfile_definition",
@@ -29179,11 +28726,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "workfile_definition",
-      "event_definition"
-    ],
+    ["buffer_definition", "workfile_definition", "event_definition"],
     [
       "buffer_definition",
       "workfile_definition",
@@ -29203,31 +28746,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "workfile_definition",
-      "dataset_definition"
-    ],
+    ["buffer_definition", "workfile_definition", "dataset_definition"],
     [
       "buffer_definition",
       "workfile_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "workfile_definition",
-      "stream_definition"
-    ],
-    [
-      "buffer_definition",
-      "property_definition"
-    ],
-    [
-      "buffer_definition",
-      "property_definition",
-      "data_source_definition"
-    ],
+    ["buffer_definition", "workfile_definition", "stream_definition"],
+    ["buffer_definition", "property_definition"],
+    ["buffer_definition", "property_definition", "data_source_definition"],
     [
       "buffer_definition",
       "property_definition",
@@ -29275,11 +28803,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "property_definition",
-      "event_definition"
-    ],
+    ["buffer_definition", "property_definition", "event_definition"],
     [
       "buffer_definition",
       "property_definition",
@@ -29299,31 +28823,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "property_definition",
-      "dataset_definition"
-    ],
+    ["buffer_definition", "property_definition", "dataset_definition"],
     [
       "buffer_definition",
       "property_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "property_definition",
-      "stream_definition"
-    ],
-    [
-      "buffer_definition",
-      "data_source_definition"
-    ],
-    [
-      "buffer_definition",
-      "data_source_definition",
-      "event_definition"
-    ],
+    ["buffer_definition", "property_definition", "stream_definition"],
+    ["buffer_definition", "data_source_definition"],
+    ["buffer_definition", "data_source_definition", "event_definition"],
     [
       "buffer_definition",
       "data_source_definition",
@@ -29343,67 +28852,29 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "data_source_definition",
-      "dataset_definition"
-    ],
+    ["buffer_definition", "data_source_definition", "dataset_definition"],
     [
       "buffer_definition",
       "data_source_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "data_source_definition",
-      "stream_definition"
-    ],
-    [
-      "buffer_definition",
-      "event_definition"
-    ],
-    [
-      "buffer_definition",
-      "event_definition",
-      "dataset_definition"
-    ],
+    ["buffer_definition", "data_source_definition", "stream_definition"],
+    ["buffer_definition", "event_definition"],
+    ["buffer_definition", "event_definition", "dataset_definition"],
     [
       "buffer_definition",
       "event_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "buffer_definition",
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "buffer_definition",
-      "dataset_definition"
-    ],
-    [
-      "buffer_definition",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "buffer_definition",
-      "stream_definition"
-    ],
-    [
-      "query_definition"
-    ],
-    [
-      "query_definition",
-      "temp_table_definition"
-    ],
-    [
-      "query_definition",
-      "temp_table_definition",
-      "workfile_definition"
-    ],
+    ["buffer_definition", "event_definition", "stream_definition"],
+    ["buffer_definition", "dataset_definition"],
+    ["buffer_definition", "dataset_definition", "stream_definition"],
+    ["buffer_definition", "stream_definition"],
+    ["query_definition"],
+    ["query_definition", "temp_table_definition"],
+    ["query_definition", "temp_table_definition", "workfile_definition"],
     [
       "query_definition",
       "temp_table_definition",
@@ -29639,11 +29110,7 @@
       "workfile_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "temp_table_definition",
-      "property_definition"
-    ],
+    ["query_definition", "temp_table_definition", "property_definition"],
     [
       "query_definition",
       "temp_table_definition",
@@ -29751,11 +29218,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "temp_table_definition",
-      "data_source_definition"
-    ],
+    ["query_definition", "temp_table_definition", "data_source_definition"],
     [
       "query_definition",
       "temp_table_definition",
@@ -29803,11 +29266,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "temp_table_definition",
-      "event_definition"
-    ],
+    ["query_definition", "temp_table_definition", "event_definition"],
     [
       "query_definition",
       "temp_table_definition",
@@ -29827,31 +29286,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "temp_table_definition",
-      "dataset_definition"
-    ],
+    ["query_definition", "temp_table_definition", "dataset_definition"],
     [
       "query_definition",
       "temp_table_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "temp_table_definition",
-      "stream_definition"
-    ],
-    [
-      "query_definition",
-      "workfile_definition"
-    ],
-    [
-      "query_definition",
-      "workfile_definition",
-      "property_definition"
-    ],
+    ["query_definition", "temp_table_definition", "stream_definition"],
+    ["query_definition", "workfile_definition"],
+    ["query_definition", "workfile_definition", "property_definition"],
     [
       "query_definition",
       "workfile_definition",
@@ -29959,11 +29403,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "workfile_definition",
-      "data_source_definition"
-    ],
+    ["query_definition", "workfile_definition", "data_source_definition"],
     [
       "query_definition",
       "workfile_definition",
@@ -30011,11 +29451,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "workfile_definition",
-      "event_definition"
-    ],
+    ["query_definition", "workfile_definition", "event_definition"],
     [
       "query_definition",
       "workfile_definition",
@@ -30035,31 +29471,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "workfile_definition",
-      "dataset_definition"
-    ],
+    ["query_definition", "workfile_definition", "dataset_definition"],
     [
       "query_definition",
       "workfile_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "workfile_definition",
-      "stream_definition"
-    ],
-    [
-      "query_definition",
-      "property_definition"
-    ],
-    [
-      "query_definition",
-      "property_definition",
-      "data_source_definition"
-    ],
+    ["query_definition", "workfile_definition", "stream_definition"],
+    ["query_definition", "property_definition"],
+    ["query_definition", "property_definition", "data_source_definition"],
     [
       "query_definition",
       "property_definition",
@@ -30107,11 +29528,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "property_definition",
-      "event_definition"
-    ],
+    ["query_definition", "property_definition", "event_definition"],
     [
       "query_definition",
       "property_definition",
@@ -30131,31 +29548,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "property_definition",
-      "dataset_definition"
-    ],
+    ["query_definition", "property_definition", "dataset_definition"],
     [
       "query_definition",
       "property_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "property_definition",
-      "stream_definition"
-    ],
-    [
-      "query_definition",
-      "data_source_definition"
-    ],
-    [
-      "query_definition",
-      "data_source_definition",
-      "event_definition"
-    ],
+    ["query_definition", "property_definition", "stream_definition"],
+    ["query_definition", "data_source_definition"],
+    ["query_definition", "data_source_definition", "event_definition"],
     [
       "query_definition",
       "data_source_definition",
@@ -30175,67 +29577,29 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "data_source_definition",
-      "dataset_definition"
-    ],
+    ["query_definition", "data_source_definition", "dataset_definition"],
     [
       "query_definition",
       "data_source_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "data_source_definition",
-      "stream_definition"
-    ],
-    [
-      "query_definition",
-      "event_definition"
-    ],
-    [
-      "query_definition",
-      "event_definition",
-      "dataset_definition"
-    ],
+    ["query_definition", "data_source_definition", "stream_definition"],
+    ["query_definition", "event_definition"],
+    ["query_definition", "event_definition", "dataset_definition"],
     [
       "query_definition",
       "event_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "query_definition",
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "query_definition",
-      "dataset_definition"
-    ],
-    [
-      "query_definition",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "query_definition",
-      "stream_definition"
-    ],
-    [
-      "temp_table_definition"
-    ],
-    [
-      "temp_table_definition",
-      "workfile_definition"
-    ],
-    [
-      "temp_table_definition",
-      "workfile_definition",
-      "property_definition"
-    ],
+    ["query_definition", "event_definition", "stream_definition"],
+    ["query_definition", "dataset_definition"],
+    ["query_definition", "dataset_definition", "stream_definition"],
+    ["query_definition", "stream_definition"],
+    ["temp_table_definition"],
+    ["temp_table_definition", "workfile_definition"],
+    ["temp_table_definition", "workfile_definition", "property_definition"],
     [
       "temp_table_definition",
       "workfile_definition",
@@ -30343,11 +29707,7 @@
       "property_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "workfile_definition",
-      "data_source_definition"
-    ],
+    ["temp_table_definition", "workfile_definition", "data_source_definition"],
     [
       "temp_table_definition",
       "workfile_definition",
@@ -30395,11 +29755,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "workfile_definition",
-      "event_definition"
-    ],
+    ["temp_table_definition", "workfile_definition", "event_definition"],
     [
       "temp_table_definition",
       "workfile_definition",
@@ -30419,31 +29775,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "workfile_definition",
-      "dataset_definition"
-    ],
+    ["temp_table_definition", "workfile_definition", "dataset_definition"],
     [
       "temp_table_definition",
       "workfile_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "workfile_definition",
-      "stream_definition"
-    ],
-    [
-      "temp_table_definition",
-      "property_definition"
-    ],
-    [
-      "temp_table_definition",
-      "property_definition",
-      "data_source_definition"
-    ],
+    ["temp_table_definition", "workfile_definition", "stream_definition"],
+    ["temp_table_definition", "property_definition"],
+    ["temp_table_definition", "property_definition", "data_source_definition"],
     [
       "temp_table_definition",
       "property_definition",
@@ -30491,11 +29832,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "property_definition",
-      "event_definition"
-    ],
+    ["temp_table_definition", "property_definition", "event_definition"],
     [
       "temp_table_definition",
       "property_definition",
@@ -30515,31 +29852,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "property_definition",
-      "dataset_definition"
-    ],
+    ["temp_table_definition", "property_definition", "dataset_definition"],
     [
       "temp_table_definition",
       "property_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "property_definition",
-      "stream_definition"
-    ],
-    [
-      "temp_table_definition",
-      "data_source_definition"
-    ],
-    [
-      "temp_table_definition",
-      "data_source_definition",
-      "event_definition"
-    ],
+    ["temp_table_definition", "property_definition", "stream_definition"],
+    ["temp_table_definition", "data_source_definition"],
+    ["temp_table_definition", "data_source_definition", "event_definition"],
     [
       "temp_table_definition",
       "data_source_definition",
@@ -30559,67 +29881,29 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "data_source_definition",
-      "dataset_definition"
-    ],
+    ["temp_table_definition", "data_source_definition", "dataset_definition"],
     [
       "temp_table_definition",
       "data_source_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "data_source_definition",
-      "stream_definition"
-    ],
-    [
-      "temp_table_definition",
-      "event_definition"
-    ],
-    [
-      "temp_table_definition",
-      "event_definition",
-      "dataset_definition"
-    ],
+    ["temp_table_definition", "data_source_definition", "stream_definition"],
+    ["temp_table_definition", "event_definition"],
+    ["temp_table_definition", "event_definition", "dataset_definition"],
     [
       "temp_table_definition",
       "event_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "temp_table_definition",
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "temp_table_definition",
-      "dataset_definition"
-    ],
-    [
-      "temp_table_definition",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "temp_table_definition",
-      "stream_definition"
-    ],
-    [
-      "workfile_definition"
-    ],
-    [
-      "workfile_definition",
-      "property_definition"
-    ],
-    [
-      "workfile_definition",
-      "property_definition",
-      "data_source_definition"
-    ],
+    ["temp_table_definition", "event_definition", "stream_definition"],
+    ["temp_table_definition", "dataset_definition"],
+    ["temp_table_definition", "dataset_definition", "stream_definition"],
+    ["temp_table_definition", "stream_definition"],
+    ["workfile_definition"],
+    ["workfile_definition", "property_definition"],
+    ["workfile_definition", "property_definition", "data_source_definition"],
     [
       "workfile_definition",
       "property_definition",
@@ -30667,11 +29951,7 @@
       "data_source_definition",
       "stream_definition"
     ],
-    [
-      "workfile_definition",
-      "property_definition",
-      "event_definition"
-    ],
+    ["workfile_definition", "property_definition", "event_definition"],
     [
       "workfile_definition",
       "property_definition",
@@ -30691,31 +29971,16 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "workfile_definition",
-      "property_definition",
-      "dataset_definition"
-    ],
+    ["workfile_definition", "property_definition", "dataset_definition"],
     [
       "workfile_definition",
       "property_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "workfile_definition",
-      "property_definition",
-      "stream_definition"
-    ],
-    [
-      "workfile_definition",
-      "data_source_definition"
-    ],
-    [
-      "workfile_definition",
-      "data_source_definition",
-      "event_definition"
-    ],
+    ["workfile_definition", "property_definition", "stream_definition"],
+    ["workfile_definition", "data_source_definition"],
+    ["workfile_definition", "data_source_definition", "event_definition"],
     [
       "workfile_definition",
       "data_source_definition",
@@ -30735,67 +30000,29 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "workfile_definition",
-      "data_source_definition",
-      "dataset_definition"
-    ],
+    ["workfile_definition", "data_source_definition", "dataset_definition"],
     [
       "workfile_definition",
       "data_source_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "workfile_definition",
-      "data_source_definition",
-      "stream_definition"
-    ],
-    [
-      "workfile_definition",
-      "event_definition"
-    ],
-    [
-      "workfile_definition",
-      "event_definition",
-      "dataset_definition"
-    ],
+    ["workfile_definition", "data_source_definition", "stream_definition"],
+    ["workfile_definition", "event_definition"],
+    ["workfile_definition", "event_definition", "dataset_definition"],
     [
       "workfile_definition",
       "event_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "workfile_definition",
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "workfile_definition",
-      "dataset_definition"
-    ],
-    [
-      "workfile_definition",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "workfile_definition",
-      "stream_definition"
-    ],
-    [
-      "property_definition"
-    ],
-    [
-      "property_definition",
-      "data_source_definition"
-    ],
-    [
-      "property_definition",
-      "data_source_definition",
-      "event_definition"
-    ],
+    ["workfile_definition", "event_definition", "stream_definition"],
+    ["workfile_definition", "dataset_definition"],
+    ["workfile_definition", "dataset_definition", "stream_definition"],
+    ["workfile_definition", "stream_definition"],
+    ["property_definition"],
+    ["property_definition", "data_source_definition"],
+    ["property_definition", "data_source_definition", "event_definition"],
     [
       "property_definition",
       "data_source_definition",
@@ -30815,117 +30042,46 @@
       "event_definition",
       "stream_definition"
     ],
-    [
-      "property_definition",
-      "data_source_definition",
-      "dataset_definition"
-    ],
+    ["property_definition", "data_source_definition", "dataset_definition"],
     [
       "property_definition",
       "data_source_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "property_definition",
-      "data_source_definition",
-      "stream_definition"
-    ],
-    [
-      "property_definition",
-      "event_definition"
-    ],
-    [
-      "property_definition",
-      "event_definition",
-      "dataset_definition"
-    ],
+    ["property_definition", "data_source_definition", "stream_definition"],
+    ["property_definition", "event_definition"],
+    ["property_definition", "event_definition", "dataset_definition"],
     [
       "property_definition",
       "event_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "property_definition",
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "property_definition",
-      "dataset_definition"
-    ],
-    [
-      "property_definition",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "property_definition",
-      "stream_definition"
-    ],
-    [
-      "data_source_definition"
-    ],
-    [
-      "data_source_definition",
-      "event_definition"
-    ],
-    [
-      "data_source_definition",
-      "event_definition",
-      "dataset_definition"
-    ],
+    ["property_definition", "event_definition", "stream_definition"],
+    ["property_definition", "dataset_definition"],
+    ["property_definition", "dataset_definition", "stream_definition"],
+    ["property_definition", "stream_definition"],
+    ["data_source_definition"],
+    ["data_source_definition", "event_definition"],
+    ["data_source_definition", "event_definition", "dataset_definition"],
     [
       "data_source_definition",
       "event_definition",
       "dataset_definition",
       "stream_definition"
     ],
-    [
-      "data_source_definition",
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "data_source_definition",
-      "dataset_definition"
-    ],
-    [
-      "data_source_definition",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "data_source_definition",
-      "stream_definition"
-    ],
-    [
-      "event_definition"
-    ],
-    [
-      "event_definition",
-      "dataset_definition"
-    ],
-    [
-      "event_definition",
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "event_definition",
-      "stream_definition"
-    ],
-    [
-      "dataset_definition"
-    ],
-    [
-      "dataset_definition",
-      "stream_definition"
-    ],
-    [
-      "stream_definition"
-    ]
+    ["data_source_definition", "event_definition", "stream_definition"],
+    ["data_source_definition", "dataset_definition"],
+    ["data_source_definition", "dataset_definition", "stream_definition"],
+    ["data_source_definition", "stream_definition"],
+    ["event_definition"],
+    ["event_definition", "dataset_definition"],
+    ["event_definition", "dataset_definition", "stream_definition"],
+    ["event_definition", "stream_definition"],
+    ["dataset_definition"],
+    ["dataset_definition", "stream_definition"],
+    ["stream_definition"]
   ],
   "precedences": [],
   "externals": [
@@ -30963,9 +30119,5 @@
     }
   ],
   "inline": [],
-  "supertypes": [
-    "_expression",
-    "_statement"
-  ]
+  "supertypes": ["_expression", "_statement"]
 }
-
